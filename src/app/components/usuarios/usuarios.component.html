@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">usuario</th>
+        <th scope="col">nombre</th>
+        <th scope="col">apellido</th>
+        <th scope="col">dni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{usuario.id}}</td>
+        <td>{{usuario.nombre}}</td>
+        <td>{{usuario.persona.nombre}}</td>
+        <td>{{usuario.persona.apellido}}</td>
+        <td>{{usuario.persona.dni}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
